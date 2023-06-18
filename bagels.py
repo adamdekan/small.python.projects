@@ -25,7 +25,7 @@ clues would be Fermi Pico.'''.format(NUM_DIGITS))
         while numGuesses <= MAX_GUESSES:
             guess = ''
             while len(guess) != NUM_DIGITS or not guess.isdecimal():
-                print('Guess #{}: '.format(numGuesses))
+                print(f'Guess #{numGuesses}: ')
                 guess = input('> ')
 
             clues = getClues(guess, secretNum)
